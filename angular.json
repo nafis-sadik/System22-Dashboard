@@ -24,12 +24,16 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "serviceWorker": true,
+            "ngswConfigPath": "ngsw-config.json"
           },
           "configurations": {
             "production": {
@@ -91,9 +95,11 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -101,5 +107,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "4480e13c-74d1-4151-b890-2bffee65730a"
   }
 }
